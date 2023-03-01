@@ -23,3 +23,7 @@ R(:,:,1)=[0 0 -1;
 Sin embargo en la última articulación no se realiza la rotación ya que el movimiento es lineal, solo tiene un movimiento hacia adelante y atrás por lo que solo se usa la matriz identidad ya que no se afecta por las posiciones del plano rotacional como en las articulaciones anteriores donde se debe considerar la posición de los planos.
 
 Finalmente como en los códigos pasados generamos las matrices de transformación y los algoritmos para obtener las velocidades en cada una de las articulaciones, esto a partir de los cálculos para la amtriz jacobiana, dentro de este algoritmo se calcula la velocidad para las articulaciones prismáticas y rotacionales, se hacen las derivadas parciales para el plano X, Y y Z y se obtienen las velocidades
+
+Finalmente el código nos regresa estas matrices como resultado, dando la velocidad lineal y angular:
+
+![image](https://user-images.githubusercontent.com/100874942/222006795-ed839197-3c41-417c-a63d-32f851a5c53f.png)
